@@ -46,6 +46,24 @@
             padding: 50px;
             padding-top: 200px;
         }
+
+
+        .tilt {
+            display: block;
+
+
+            margin: 0 auto;
+            transition: box-shadow 0.1s, transform 0.1s;
+            box-shadow: 5px 3px #FF4C29;
+
+
+        }
+
+        .tilt:hover {
+
+            box-shadow: 5px 5px #FF4C29;
+
+        }
     </style>
 
 
@@ -54,26 +72,25 @@
 
 <body style="background-color: #082032;">
 
-    
+
 
     <div class="parallax">
         <div class="container-fluid sticky-top ">
 
-            <nav class="navbar navbar-expand-lg navbar-light sticky-top rounded-bottom " style="background-color:#2aff3e;">
-    
-                <a class="navbar-brand pl-3 pr-3 bg-dark rounded" href="#"
-                    style="color:white;font-family: 'Rubik Mono One', sans-serif;font-size:1.5rem;">Coding
-                    Club</a>
+            <nav class="navbar navbar-expand-lg navbar-light sticky-top rounded-bottom "
+                style="background-color:#2aff3e;">
+
+                <a class="navbar-brand pl-3 pr-3 bg-dark rounded tilt" href="#"
+                    style="color:white;font-family: 'Rubik Mono One', sans-serif;font-size:1.5rem;">Coding Club</a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
                     aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup"
                     style="font-size:1.3rem;font-weight:700;">
-                    <div class="navbar-nav " >
+                    <div class="navbar-nav ">
                         <a class="nav-item nav-link active ml-5 mr-5" href="#"
-                            style="color:#334756;font-family: 'Poppins', sans-serif;">Home <span
-                                class="sr-only">(current)</span></a>
+                            style="color:#334756;font-family: 'Poppins', sans-serif;">Home</a>
                         <a class="nav-item nav-link ml-5 mr-5" href="#"
                             style="color:#334756;font-family: 'Poppins', sans-serif;">About</a>
                         <a class="nav-item nav-link ml-5 mr-5" href="#"
@@ -82,7 +99,7 @@
                             style="color:#334756;font-family: 'Poppins', sans-serif;">Activities</a>
                         <a class="nav-item nav-link ml-5 mr-5" href="#"
                             style="color:#334756;font-family: 'Poppins', sans-serif;">Members</a>
-    
+
                     </div>
                 </div>
             </nav>
