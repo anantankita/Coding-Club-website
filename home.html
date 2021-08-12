@@ -25,7 +25,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <style>
+        body {
+            overflow-x: hidden;
+        }
+
         .parallax {
             /* The image used */
             background-image: url("bg.jpg");
@@ -64,16 +71,70 @@
             box-shadow: 7px 5px #FF4C29;
 
         }
-        .links{
-            color:#334756;font-family: 'Poppins', sans-serif;
+
+        .links {
+            color: #334756;
+            font-family: 'Poppins', sans-serif;
+        }
+
+
+
+
+
+        /* from: https://davidwalsh.name/css-flip  */
+
+        .card {
+            text-align: center;
+            color: #FFFFFF;
+            width: 100%;
+            height: 550px;
+            transition: 0.6s;
+            transform-style: preserve-3d;
+            border-style: none;
+
+            background-color: #DDDDDD;
+        }
+
+        .flipper {}
+
+        /* flip the pane when hovered */
+        .flipper.flip .card {
+            transform: rotateY(180deg);
+        }
+
+        .front,
+        .back {
+            width: 100%;
+
+            backface-visibility: hidden;
+            position: absolute;
+            left: 0;
+        }
+
+        .front {
+
+            transform: rotateY(0deg);
+
+        }
+
+        .back {
+            transform: rotateY(180deg);
+
+        }
+
+        @media only screen and (max-width: 600px) {
+            .card {
+                height: 200px;
+            }
         }
     </style>
 
 
 
+
 </head>
 
-<body style="background-color: #082032;">
+<body style="background-color: #DDDDDD;">
 
 
 
@@ -91,16 +152,11 @@
                 <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup"
                     style="font-size:1.3rem;font-weight:700;">
                     <div class="navbar-nav ">
-                        <a class="nav-item nav-link links active ml-5 mr-5" href="home.html"
-                            >Home</a>
-                        <a class="nav-item nav-link links active ml-5 mr-5" href="about.html"
-                            >About</a>
-                        <a class="nav-item nav-link links active ml-5 mr-5" href="#"
-                            >Events</a>
-                        <a class="nav-item nav-link links active ml-5 mr-5" href="#"
-                            >Activities</a>
-                        <a class="nav-item nav-link links active ml-5 mr-5" href="#"
-                            >Members</a>
+                        <a class="nav-item nav-link links active ml-5 mr-5" href="home.html">Home</a>
+                        <a class="nav-item nav-link links active ml-5 mr-5" href="about.html">About</a>
+                        <a class="nav-item nav-link links active ml-5 mr-5" href="#">Events</a>
+                        <a class="nav-item nav-link links active ml-5 mr-5" href="#">Activities</a>
+                        <a class="nav-item nav-link links active ml-5 mr-5" href="#">Members</a>
 
                     </div>
                 </div>
@@ -111,25 +167,94 @@
                 SRMAP CODING CLUB
             </p>
         </div>
+
     </div>
-    <div class="container-fluid">
-        <div class="col-lg-11 mx-auto mt-2" style="background-color:#FF4C29">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Inventore amet eius exercitationem dolore, fugiat
-            earum nemo rem ab nam maxime delectus aspernatur enim soluta quos consequatur sunt nesciunt quasi
-            reiciendis.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum maxime eos voluptate accusamus officia quidem
-            nesciunt omnis, laudantium ut a quam? Excepturi a possimus, id dolorum ad ab molestiae cum.
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aut velit delectus tempora quam amet nobis
-            doloribus sunt, libero ut. Vel dicta perspiciatis impedit, quia minima deserunt blanditiis nam aspernatur
-            quibusdam?
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum, fugit esse doloremque aperiam in ut
-            commodi, explicabo exercitationem iusto quasi repellendus. Repudiandae repellendus pariatur quos ullam
-            minima non magnam maiores?
+    <!--
+        <div class="container-fluid">
+
+        <div class="col-lg-11 mx-auto mt-2" data-aos="fade-right">
+            <img src="whatdowedo.png" class="img-fluid" alt="Responsive image">
+
+        </div>
+        <div class="col-lg-11 mx-auto mt-2 mb-3" data-aos="fade-left">
+            <img src="howcanyoujoin.png" class="img-fluid" alt="Responsive image">
 
         </div>
 
     </div>
+-->
 
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-11 mx-auto">
+                <div class="flipper">
+                    <div class="card">
+                        <div class="front">
+                            <img src="whoarewe.png" class="img-fluid" alt="Responsive image" data-aos="fade-right">
+                        </div>
+                        <div class="back">
+                            <img src="Group 3.png" class="img-fluid" alt="Responsive image">
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-11 mx-auto   " style="margin-top:-40px;">
+                <div class="flipper">
+                    <div class="card">
+                        <div class="front">
+                            <img src="whatdowedo.png" class="img-fluid" alt="Responsive image" data-aos="fade-left">
+                        </div>
+                        <div class="back">
+                            <img src="Group 3.png" class="img-fluid" alt="Responsive image">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-11 mx-auto   " style="margin-top:-40px;">
+                <div class="flipper">
+                    <div class="card">
+                        <div class="front">
+                            <img src="howcanyoujoin.png" class="img-fluid" alt="Responsive image" data-aos="fade-right">
+                        </div>
+                        <div class="back">
+                            <img src="Group 3.png" class="img-fluid" alt="Responsive image">
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 500,
+            delay: 50
+        });
+    </script>
 </body>
+<script>$(".flipper").click(function () {
+        var target = $(event.target);
+        if (target.is("a")) {
+            //follow that link
+            return true;
+        } else {
+            $(this).toggleClass("flip");
+        }
+        return false;
+    });</script>
 
 </html>
