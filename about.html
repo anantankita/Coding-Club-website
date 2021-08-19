@@ -20,14 +20,29 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300;1,500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300;1,500&display=swap"
+        rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
     <style>
+               .socialinks{
+            font-family: 'Poppins', sans-serif;
+            font-size: 1.0rem;
+            color: white;
+        }
+        body {
+            overflow-x: hidden;
+        }
+
+        .bigtext {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+        }
+
         .parallax {
             /* The image used */
-            background-image: url("bg.jpg");
+            background-image: url("Images/image 1.png");
 
             /* Set a specific height */
             min-height: 600px;
@@ -40,235 +55,38 @@
             background-size: cover;
 
         }
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        html {
-            font-family: "Montserrat";
-        }
-        body {
-            font: 400 15px Lato, sans-serif;
-            line-height: 1.8;
-            color: #ffffff;
-        }
 
-        h2 {
-            font-size: 24px;
-            text-transform: uppercase;
-            color: #ffffff;
-            font-weight: 600;
-            margin-bottom: 30px;
-        }
-        h4 {
-            font-size: 19px;
-            line-height: 1.375em;
-            color: #ffffff;
-            font-weight: 400;
-            margin-bottom: 30px;
-        }
         .text-box {
             padding: 50px;
             padding-top: 200px;
         }
 
-        .button{
-            position: absolute;
-            top: 100%;
-            left: 10%;
-            transform: translate(-50%,-50%);
-        }
 
-        .btn{
-            border: 1px solid #fff;
-            padding: 10px 30px;
-            color: #fff;
-            text-decoration: none;
-            transition: 0.6s ease;
-        }
-
-        .btn:hover{
-            background-color: #fff;
-            color: #000;
-        }
-        #contact{
-            margin: 30px auto;
-            width: 90%;
-            background-color: #334756;
-            background-position: center;
-            background-size: cover;
-            border-radius: 10px;
-            text-align: left;
-            padding: 50px 50px;
-        }
-
-        #contact h3{
-            color: #fff;
-            margin-bottom: 40px;
-            font-size: 48px;
-            padding: 0;
-        }
-
-        #contact1{
-            margin: 30px auto;
-            width: 90%;
-            background-color: #334756;
-            background-position: center;
-            background-size: cover;
-            border-radius: 10px;
-            text-align: left;
-            padding: 50px 50px;
-        }
-
-        #contact1 h3{
-            color: #fff;
-            margin-bottom: 40px;
-            font-size: 48px;
-            padding: 0;
-        }
-
-        .card{
-            border-radius: 4px;
-            background: #DDDDDD;
-            box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-            padding: 10px 10px 10px 10px;
-            cursor: pointer;
-        }
-
-        .card:hover{
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0,0,0,0.9), 0 4px 8px rgba(0,0,0,0.9);
-        }
-
-        .hover {
-            overflow: hidden;
-            position: relative;
-            padding-bottom: 60%;
-            margin-bottom: 20px;
-        }
-
-        .hover-overlay {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 90;
-            transition: all 0.4s;
-        }
-
-        .hover img {
-            width: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            transition: all 0.3s;
-        }
-
-        .hover-content {
-            position: relative;
-            z-index: 99;
-        }
-
-
-        .hover-2 .hover-overlay {
-            background: linear-gradient(to top, rgba(255, 0, 0, 0.4), rgba(0, 0, 0, 0.1));
-        }
-
-        .hover-2-title {
-            position: absolute;
-            top: 50%;
-            left: 0;
-            text-align: center;
-            width: 100%;
-            z-index: 99;
-            transition: all 0.3s;
-        }
-
-        .hover-2:hover .hover-2-title {
-            transform: translateY(-1.5rem);
-        }
-
-        .hover-2:hover .hover-overlay {
-            background: linear-gradient(to top, rgba(255, 143, 143, 0.9), rgba(0, 0, 0, 0.1));
-        }
-
-        .container {
-            min-height: 100vh;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 100px 0;
-        }
-
-        .container {
-            margin-top: 200px
-        }
-
-        .title {
-            color: #1a1a1a;
-            text-align: center;
-            margin-bottom: 10px
-        }
-
-        .hori-timeline .events {
-            border-top: 3px solid #e9ecef;
-        }
-        .hori-timeline .events .event-list {
+        .tilt {
             display: block;
-            position: relative;
-            text-align: center;
-            padding-top: 70px;
-            margin-right: 0;
-        }
-        .hori-timeline .events .event-list:before {
-            content: "";
-            position: absolute;
-            height: 36px;
-            border-right: 2px dashed #dee2e6;
-            top: 0;
-        }
-        .hori-timeline .events .event-list .event-date {
-            position: absolute;
-            top: 38px;
-            left: 0;
-            right: 0;
-            width: 75px;
+
+
             margin: 0 auto;
-            border-radius: 4px;
-            padding: 2px 4px;
+            transition: box-shadow 0.1s, transform 0.1s;
+            box-shadow: 5px 3px #FF4C29;
+
+
         }
-        @media (min-width: 1140px) {
-            .hori-timeline .events .event-list {
-                display: inline-block;
-                width: 24%;
-                padding-top: 45px;
-            }
-            .hori-timeline .events .event-list .event-date {
-                top: -12px;
-            }
+
+        .tilt:hover {
+
+            box-shadow: 7px 5px #FF4C29;
+
         }
-        .bg-soft-primary {
-            background-color: rgba(64,144,203,.3)!important;
-        }
-        .bg-soft-success {
-            background-color: rgba(71,189,154,.3)!important;
-        }
-        .bg-soft-danger {
-            background-color: rgba(231,76,94,.3)!important;
-        }
-        .bg-soft-warning {
-            background-color: rgba(249,213,112,.3)!important;
-        }
-        .card1 {
-            border: none;
-            margin-bottom: 24px;
-            -webkit-box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
-            box-shadow: 0 0 13px 0 rgba(236,236,241,.44);
+
+        .links {
+            color: #334756;
+            font-family: 'Poppins', sans-serif;
         }
     </style>
+
+
+
 </head>
 
 <body style="background-color: #DDDDDD;">
@@ -287,353 +105,135 @@
                 <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup"
                     style="font-size:1.3rem;font-weight:700;">
                     <div class="navbar-nav ">
-                        <a class="nav-item nav-link links active ml-5 mr-5" href="home.html"
-                            >Home</a>
-                        <a class="nav-item nav-link links active ml-5 mr-5" href="about-main.html"
-                            >About</a>
-                        <a class="nav-item nav-link links active ml-5 mr-5" href="#"
-                            >Events</a>
-                        <a class="nav-item nav-link links active ml-5 mr-5" href="#"
-                            >Activities</a>
-                        <a class="nav-item nav-link links active ml-5 mr-5" href="#"
-                            >Members</a>
+                        <a class="nav-item nav-link links active ml-5 mr-5" href="home.html">Home</a>
+                        <a class="nav-item nav-link links active ml-5 mr-5" href="about.html">About</a>
+                        <a class="nav-item nav-link links active ml-5 mr-5" href="events.html">Events</a>
+                        <a class="nav-item nav-link links active ml-5 mr-5" href="#">Activities</a>
+                        <a class="nav-item nav-link links active ml-5 mr-5" href="#">Members</a>
 
                     </div>
                 </div>
             </nav>
         </div>
         <div class="col-lg-12 text-box text-center  " style="color:white;">
-            <p style="color:white;font-family: 'Poppins', sans-serif;font-size:4rem;font-weight: 700;" class="bg-dark ">
-                About Us Page
+            <p style="color:white;font-size:4rem;" class="bg-dark bigtext">
+                About Us
             </p>
         </div>
-    </div><br><br>
-    <div id="contact" class="container-fluid">
-        <div class="row">
-            <div class="col-sm-8">
-                <h2>About Us</h2><br>
-                <p>Coding club, SRM- University AP is a student-run community exclusive to the students of SRM- University, AP. The aim of this club is to learn the art of coding and increase the joy of programming. The goal of this club is to cherish the appetite for learning modern technologies and shape them through programming. We are a bunch of welcoming, friendly coding enthusiasts. Here we try to take the fear of programming from the members away. We try to inspire and motivate members to excel in life with the help of coding.</p>
-                </p>The club also aims to provide a platform to nourish the technical skills of its members through various activities. During these activities, the members can learn about new technologies, showcase their skills and explain concepts to the rest of the members so that everyone can learn and grow together.</p>
-            </div>
-            <div class="col-sm-4">
-                <img src="shutterstock_749021593-1.jpg" class="img-fluid" alt="Responsive image">
-            </div>
-        </div>
-    </div>
-    <div id="contact" class="container-fluid bg-grey">
-        <div class="row">
-            <div class="col-sm-4">
-                <img src="shutterstock_749021593-1.jpg" class="img-fluid" alt="Responsive image">
-            </div>
-            <div class="col-sm-8">
-                <br><h2>Our Vision</h2><br>
-                <h4><strong>To facilitate members with the knowledge, confidence, and opportunity to make a difference in the world.</strong></h4>
-                <p>The club's major goal is to strengthen the programming skills of its members. The club will encourage them for prestigious contests such as ACM-ICPC, Google Code Jam, and different national and international hackathons. The coding club brings the coding expertise together under one roof. Coding club activities consist of multiple thrust areas like Big data analytics, Internet of Things, Ethical hacking, Web Development, Android Development, Quantum Computing, Artificial Intelligence, and Machine learning.</p>
-            </div>
 
-            <section class="pt-5 pb-5">
-                <div>
+    </div>
+
+    </div>
+    <div class="container-fluid">
+        <div class="row mt-2">
+            <div class="col-lg-11 mx-auto rounded" style="background-color:#082032 ;background-image:url('Images/Group.png');">
+                <h3 class="mt-4"><span class="bigtext" style="color:#FF4C29; font-size:2rem;">Powered
+                        by us</span><span class="mt-3 ml-2 bigtext" style="color:white; font-size:2rem;"> The
+                        Students at SRMAP</span> </h3>
+
+                <div class="container-fluid">
                     <div class="row">
-                        <div class="col-6">
-                            <h3 class="mb-3">Activity Thrust Areas</h3>
+                        <div class="col-md-9 mt-4">
+                            <p class="p-3 text-white bigtext" style="font-size:1.5rem;">
+                                Coding club, SRM- University AP is a <span style="color:#FF4C29;">student-run
+                                    community</span>
+                                exclusive to the students of SRM- University, AP.
+                                <br> <br>
+
+                                The aim of this club is to learn the art of coding and increase the joy of programming.
+                                The goal of this club is to cherish the appetite for learning modern technologies and
+                                shape them through programming.
+                            </p>
                         </div>
-                        <div class="col-6 text-right">
-                            <a class="btn btn-dark mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                                <i class="fa fa-arrow-left"><h6>←</h6></i>
-                            </a>
-                            <a class="btn btn-dark mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
-                                <i class="fa fa-arrow-right"><h6>→</h6></i>
-                            </a>
-                        </div>
-                        <div class="col-12">
-                            <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-        
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <div class="row">
-                                            <div class="col-lg-4 mb-3 mb-lg-0">
-                                                <div class="hover hover-2 text-white rounded"><img src="download.jpg" alt="">
-                                                <div class="hover-overlay"></div>
-                                                <div class="hover-2-content px-5 py-4">
-                                                    <h3 class="hover-2-title"> <span class="font-weight-light">Big data analytics</span></h3>
-                                                </div>
-                                                </div>
-                                            </div>
-        
-                                            <div class="col-lg-4 mb-3 mb-lg-0">
-                                                <div class="hover hover-2 text-white rounded"><img src="download.jpg" alt="">
-                                                <div class="hover-overlay"></div>
-                                                <div class="hover-2-content px-5 py-4">
-                                                    <h3 class="hover-2-title"> <span class="font-weight-light">Internet of Things</span></h3>
-                                                </div>
-                                                </div>
-                                            </div>
-        
-                                            <div class="col-lg-4 mb-3 mb-lg-0">
-                                                <div class="hover hover-2 text-white rounded"><img src="download.jpg" alt="">
-                                                <div class="hover-overlay"></div>
-                                                <div class="hover-2-content px-5 py-4">
-                                                    <h3 class="hover-2-title"> <span class="font-weight-light">Ethical Hacking</span></h3>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="row">
-        
-                                            <div class="col-lg-4 mb-3 mb-lg-0">
-                                                <div class="hover hover-2 text-white rounded"><img src="download.jpg" alt="">
-                                                <div class="hover-overlay"></div>
-                                                <div class="hover-2-content px-5 py-4">
-                                                    <h3 class="hover-2-title"> <span class="font-weight-light">Web Development</span></h3>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 mb-3 mb-lg-0">
-                                                <div class="hover hover-2 text-white rounded"><img src="download.jpg" alt="">
-                                                <div class="hover-overlay"></div>
-                                                <div class="hover-2-content px-5 py-4">
-                                                    <h3 class="hover-2-title"> <span class="font-weight-light">Android Development</span></h3>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 mb-3 mb-lg-0">
-                                                <div class="hover hover-2 text-white rounded"><img src="download.jpg" alt="">
-                                                <div class="hover-overlay"></div>
-                                                <div class="hover-2-content px-5 py-4">
-                                                    <h3 class="hover-2-title"> <span class="font-weight-light">Quantum Computing</span></h3>
-                                                </div>
-                                                </div>
-                                            </div>
-        
-                                        </div>
-                                    </div>
-                                    <div class="carousel-item">
-                                        <div class="row">
-        
-                                            <div class="col-lg-4 mb-3 mb-lg-0">
-                                                <div class="hover hover-2 text-white rounded"><img src="download.jpg" alt="">
-                                                <div class="hover-overlay"></div>
-                                                <div class="hover-2-content px-5 py-4">
-                                                    <h3 class="hover-2-title"> <span class="font-weight-light">Artifical Intelligence</span></h3>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 mb-3 mb-lg-0">
-                                                <div class="hover hover-2 text-white rounded"><img src="download.jpg" alt="">
-                                                <div class="hover-overlay"></div>
-                                                <div class="hover-2-content px-5 py-4">
-                                                    <h3 class="hover-2-title"> <span class="font-weight-light">Machine learning</span></h3>
-                                                </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-lg-4 mb-3 mb-lg-0">
-                                                <div class="hover hover-2 text-white rounded"><img src="download.jpg" alt="">
-                                                <div class="hover-overlay"></div>
-                                                <div class="hover-2-content px-5 py-4">
-                                                    <h3 class="hover-2-title"> <span class="font-weight-light">Cloud Computing</span></h3>
-                                                </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="col-md-3  " style="margin-top: -40px;">
+                            <img src="Group 10.png" class="img-fluid" alt="Responsive image">
                         </div>
                     </div>
+
+
                 </div>
-            </section>
 
-            <div class="col-lg-12">
-                <div class="card1">
-                    <div class="card-body">
-                        <h4 class="card-title mb-5">Horizontal Timeline</h4>
-
-                        <div class="hori-timeline" dir="ltr">
-                            <ul class="list-inline events">
-                                <li class="list-inline-item event-list">
-                                    <div class="px-4">
-                                        <h5 class="font-size-16">ACM-ICPC</h5>
-                                        <p class="text-muted">Lorem ipsum dolor sit amet.</p>
-                                    </div>
-                                </li><li class="list-inline-item event-list">
-                                    <div class="px-4">
-                                        <h5 class="font-size-16">Google Code Jam</h5>
-                                        <p class="text-muted">Lorem ipsum dolor sit amet.</p>
-                                    </div>
-                                </li><li class="list-inline-item event-list">
-                                    <div class="px-4">
-                                        <h5 class="font-size-16">Coding Contests</h5>
-                                        <p class="text-muted">Lorem ipsum dolor sit amet.</p>
-                                    </div>
-                                </li>
-                                <li class="list-inline-item event-list">
-                                    <div class="px-4">
-                                        <h5 class="font-size-16">Hackathons</h5>
-                                        <p class="text-muted">Lorem ipsum dolor sit amet.</p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-
-    
-    <div id="contact" class="card-deck">
-        <div class="card" class="shadow-lg p-3 mb-5 bg-white rounded">
-          <img src="EFPA_Website_Members_Who_are_our_members_RECOLORED.jpg" class="card-img-top" alt="Responsive image">
-          <div class="card-body">
-              <div class="text-center">
-                <h3 class="text-secondary">Events</h3>
-                <a href="#" class="btn btn-primary">Read More → </a>
-              </div>
-          </div>
-        </div>
-        <div class="card" class="shadow-lg p-3 mb-5 bg-white rounded">
-          <img src="EFPA_Website_Members_Who_are_our_members_RECOLORED.jpg" class="card-img-top" alt="Responsive image">
-          <div class="card-body">
-            <div class="text-center">
-                <h3 class="text-secondary">Activities</h3>
-                <a href="#" class="btn btn-primary">Read More → </a>
-              </div>
-          </div>
-        </div>
-        <div class="card" class="shadow-lg p-3 mb-5 bg-white rounded">
-          <img src="EFPA_Website_Members_Who_are_our_members_RECOLORED.jpg" class="card-img-top" alt="Responsive image">
-          <div class="card-body">
-            <div class="text-center">
-                <h3 class="text-secondary">Members</h3>
-                <a href="#" class="btn btn-primary">Read More → </a>
-              </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div id="contact" class="container-fluid bg-grey">
-        <section class="pt-5 pb-5">
-        <div>
-            <div class="row">
-                <div class="col-6">
-                    <h3 class="mb-3">Activity Thrust Areas</h3>
-                </div>
-                <div class="col-6 text-right">
-                    <a class="btn btn-dark mb-3 mr-1" href="#carouselExampleIndicators2" role="button" data-slide="prev">
-                        <i class="fa fa-arrow-left"><h6>←</h6></i>
-                    </a>
-                    <a class="btn btn-dark mb-3 " href="#carouselExampleIndicators2" role="button" data-slide="next">
-                        <i class="fa fa-arrow-right"><h6>→</h6></i>
-                    </a>
-                </div>
-                <div class="col-12">
-                    <div id="carouselExampleIndicators2" class="carousel slide" data-ride="carousel">
-
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="row">
-                                    <div class="col-lg-4 mb-3 mb-lg-0">
-                                        <div class="hover hover-2 text-white rounded"><img src="download.jpg" alt="">
-                                        <div class="hover-overlay"></div>
-                                        <div class="hover-2-content px-5 py-4">
-                                            <h3 class="hover-2-title"> <span class="font-weight-light">Big data analytics</span></h3>
-                                        </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4 mb-3 mb-lg-0">
-                                        <div class="hover hover-2 text-white rounded"><img src="download.jpg" alt="">
-                                        <div class="hover-overlay"></div>
-                                        <div class="hover-2-content px-5 py-4">
-                                            <h3 class="hover-2-title"> <span class="font-weight-light">Internet of Things</span></h3>
-                                        </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-lg-4 mb-3 mb-lg-0">
-                                        <div class="hover hover-2 text-white rounded"><img src="download.jpg" alt="">
-                                        <div class="hover-overlay"></div>
-                                        <div class="hover-2-content px-5 py-4">
-                                            <h3 class="hover-2-title"> <span class="font-weight-light">Ethical Hacking</span></h3>
-                                        </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-
-                                    <div class="col-lg-4 mb-3 mb-lg-0">
-                                        <div class="hover hover-2 text-white rounded"><img src="download.jpg" alt="">
-                                        <div class="hover-overlay"></div>
-                                        <div class="hover-2-content px-5 py-4">
-                                            <h3 class="hover-2-title"> <span class="font-weight-light">Web Development</span></h3>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 mb-3 mb-lg-0">
-                                        <div class="hover hover-2 text-white rounded"><img src="download.jpg" alt="">
-                                        <div class="hover-overlay"></div>
-                                        <div class="hover-2-content px-5 py-4">
-                                            <h3 class="hover-2-title"> <span class="font-weight-light">Android Development</span></h3>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 mb-3 mb-lg-0">
-                                        <div class="hover hover-2 text-white rounded"><img src="download.jpg" alt="">
-                                        <div class="hover-overlay"></div>
-                                        <div class="hover-2-content px-5 py-4">
-                                            <h3 class="hover-2-title"> <span class="font-weight-light">Quantum Computing</span></h3>
-                                        </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="row">
-
-                                    <div class="col-lg-4 mb-3 mb-lg-0">
-                                        <div class="hover hover-2 text-white rounded"><img src="download.jpg" alt="">
-                                        <div class="hover-overlay"></div>
-                                        <div class="hover-2-content px-5 py-4">
-                                            <h3 class="hover-2-title"> <span class="font-weight-light">Artifical Intelligence</span></h3>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 mb-3 mb-lg-0">
-                                        <div class="hover hover-2 text-white rounded"><img src="download.jpg" alt="">
-                                        <div class="hover-overlay"></div>
-                                        <div class="hover-2-content px-5 py-4">
-                                            <h3 class="hover-2-title"> <span class="font-weight-light">Machine learning</span></h3>
-                                        </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-4 mb-3 mb-lg-0">
-                                        <div class="hover hover-2 text-white rounded"><img src="download.jpg" alt="">
-                                        <div class="hover-overlay"></div>
-                                        <div class="hover-2-content px-5 py-4">
-                                            <h3 class="hover-2-title"> <span class="font-weight-light">Cloud Computing</span></h3>
-                                        </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
-        </section>
     </div>
-    
+
+    <div class="container-fluid">
+        <div class="row mt-2">
+            <div class="col-lg-11 mx-auto rounded" style="background-color:#082032 ;background-image:url('Images/Group.png');">
+                <h3 class="mt-4 ml-3">
+                    <span class="bigtext" style="color:#64C9CF;font-size:2.3rem;">YOU CAN
+                    </span>
+                    <span class="mt-3 ml-2 bigtext" style="color:white;font-size:2rem;"> do this
+                        !!
+                    </span>
+                </h3>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8 mt-4">
+                            <p class="p-3 text-white bigtext" style="font-size:1.5rem;">
+                                We are a bunch of welcoming, friendly coding enthusiasts. Here we try to take away the
+                                fear of programming from the members of the club.
+                                <br><br>
+
+                                We try to inspire and motivate members to excel in life with the help of coding. We also
+                                aim to provide a platform to nourish the technical skills of its members through various
+                                activities.
+                                <br><br>
+
+                                During these activities, you can learn about new technologies, showcase their skills and
+                                explain concepts to the rest of the members so that everyone can learn and grow
+                                together.
+                                <br>
+                            </p>
+                        </div>
+                        <div class="col-md-4  ">
+                            <img src="Group 11.png" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class="row mt-2">
+            <div class="col-lg-11 mx-auto rounded" style="background-color:#082032 ;background-image:url('Images/Group.png');">
+                <h3 class="mt-4 ml-3">
+                    <span class="mt-3 ml-2 bigtext" style="color:white;font-size:2rem;"> WE
+                    </span>
+                    <span class="bigtext" style="color:#64C9CF;font-size:2.3rem;">HAVE
+                        YOUR BACK
+                    </span>
+
+                </h3>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-md-8 mt-4">
+                            <p class="p-3 text-white bigtext" style="font-size:1.5rem; ">
+                                We facilitate members with the knowledge, confidence, and opportunity to <span
+                                    style="color:#64C9CF">make a difference in the world</span>. The club's major goal
+                                is to strengthen the programming skills of its members.
+                            </p>
+                        </div>
+                        <div class="col-md-4  ">
+                            <img src="Group 11.png" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
 </body>
 
 </html>
-

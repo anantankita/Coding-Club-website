@@ -8,7 +8,7 @@
   .flip-card-front{width: 280px;
     min-height: 400px;
     height: auto;
-    background-image:     url(hackathon.png);
+    background-image:url(Images/hackathon.png);
     background-repeat: no-repeat ;
     background-size: 320px 420px;
     background-position: center;
@@ -27,32 +27,32 @@
     backface-visibility: hidden;
     transform-style: preserve-3d;
     transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
-    background-image: url(Group.png);
+    background-image: url(Images/Group.png);
     background-position: center;
   }
   
   .flip-card:nth-of-type(2) .flip-card-front{
-    background-image: url(lecture.png);
+    background-image: url(Images/lecture.png);
         
     background-position: center;
     background-repeat: no-repeat;
     background-size:400px 400px;
   }
   .flip-card:nth-of-type(2) .flip-card-back {
-    background-image: url(Group.png);
+    background-image: url(Images/Group.png);
     background-position: center;
 
 
   }
   
-  .flip-card:nth-of-type(3) .flip-card-front{background-image: url(black.jpg);
+  .flip-card:nth-of-type(3) .flip-card-front{background-image: url(Images/black.jpg);
   }
   .flip-card:nth-of-type(3) .flip-card-back {
-      background-image: url(Group.png);
+      background-image: url(Images/Group.png);
     background-position: center;
   }
 
-  .flip-card:nth-of-type(4) .flip-card-front{background-image: url(fun.jpg);
+  .flip-card:nth-of-type(4) .flip-card-front{background-image: url(Images/fun.jpg);
         
     background-position: left;
     background-repeat: no-repeat;
@@ -60,57 +60,57 @@
 
   }
   .flip-card:nth-of-type(4) .flip-card-back {
-      background-image: url(Group.png);
+      background-image: url(Images/Group.png);
     background-position: center;
   }
-  .flip-card:nth-of-type(5) .flip-card-front{background-image: url(workshops.jpg);
+  .flip-card:nth-of-type(5) .flip-card-front{background-image: url(Images/workshops.jpg);
         
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .flip-card:nth-of-type(5) .flip-card-back {
-      background-image: url(Group.png);
+      background-image: url(Images/Group.png);
     background-position: center;
   }
-  .flip-card:nth-of-type(6) .flip-card-front{background-image: url(codechef.jpg);
+  .flip-card:nth-of-type(6) .flip-card-front{background-image: url(Images/codechef.jpg);
     backface-visibility: hidden;
   }
   .flip-card:nth-of-type(6) .flip-card-back {
-      background-image: url(Group.png);
+      background-image: url(Images/Group.png);
     background-position: center;
     backface-visibility: hidden;
   }
-  .flip-card:nth-of-type(7) .flip-card-front{background-image: url(stu_assist.jpg);
+  .flip-card:nth-of-type(7) .flip-card-front{background-image: url(Images/stu_assist.jpg);
       
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .flip-card:nth-of-type(7) .flip-card-back {
-      background-image: url(Group.png);
+      background-image: url(Images/Group.png);
     background-position: center;
     backface-visibility: hidden;
   }
-  .flip-card:nth-of-type(8) .flip-card-front{background-image: url(Alumni.png);
+  .flip-card:nth-of-type(8) .flip-card-front{background-image: url(Images/Alumni.png);
     
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .flip-card:nth-of-type(8) .flip-card-back {
-      background-image: url(Group.png);
+      background-image: url(Images/Group.png);
     background-position: center;
     backface-visibility: hidden;
   }
-  .flip-card:nth-of-type(9) .flip-card-front{background-image: url(IEEE.jpg);
+  .flip-card:nth-of-type(9) .flip-card-front{background-image: url(Images/IEEE.jpg);
     
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
   }
   .flip-card:nth-of-type(9) .flip-card-back {
-      background-image: url(Group.png);
+      background-image: url(Images/Group.png);
     background-position: center;
     backface-visibility: hidden;
   }
