@@ -1,213 +1,252 @@
 <!doctype html>
 <html lang="en">
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-            crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-            crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-            crossorigin="anonymous"></script>
-    
-    
-        <link rel="stylesheet" href="main.css
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+
+  <link rel="stylesheet" href="main.css
 ">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300;1,500&display=swap"
-            rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
-        <style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,300;1,500&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap" rel="stylesheet">
+  <style>
+    body {
+      overflow-x: hidden;
+    }
+    .backcardtext{
+      color:white;
+      font-family: 'Poppins', sans-serif;
+      font-size:1.1rem;
+    }
+
+    .text-box {
+      padding: 50px;
+      padding-top: 200px;
+    }
+
+    .tilt {
+      display: block;
+       margin: 0 auto;
+      transition: box-shadow 0.1s, transform 0.1s;
+      box-shadow: 5px 3px #FF4C29;
+    }
+
+    .tilt:hover {
+
+      box-shadow: 7px 5px #FF4C29;
+
+    }
+
+    .links {
+      color: #334756;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .parallax {
+      background-image: url("bg.jpg");
+
+      min-height: 600px;
+      width: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+    }
     
-            .text-box {
-                padding: 50px;
-                padding-top: 200px;
-            }
-            .tilt {
-                display: block;
-    
-    
-                margin: 0 auto;
-                transition: box-shadow 0.1s, transform 0.1s;
-                box-shadow: 5px 3px #FF4C29;
-            }
-    
-            .tilt:hover {
-    
-                box-shadow: 7px 5px #FF4C29;
-    
-            }
-            .links{
-                color:#334756;font-family: 'Poppins', sans-serif;
-            }
-        </style>    
-    </head>   
-    <body style="background-color: #DDDDDD;">  
+  </style>
+</head>
+
+<body style="background-color: #DDDDDD;">
+
   <body>
-   <header>
-    <div class="parallax">
+    <header>
+      <div class="parallax">
         <div class="container-fluid sticky-top ">
-            <nav class="navbar navbar-expand-lg navbar-light sticky-top rounded-bottom "
-                style="background-color:#2aff3e;">
+          <nav class="navbar navbar-expand-lg navbar-light sticky-top rounded-bottom "
+            style="background-color:#2aff3e;">
 
-                <a class="navbar-brand pl-3 pr-3 bg-dark rounded tilt" href="#"
-                    style="color:white;font-family: 'Rubik Mono One', sans-serif;font-size:1.5rem;">Coding Club</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-        <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup"
-        style="font-size:1.3rem;font-weight:700;">
-        <div class="navbar-nav ">
-            <a class="nav-item nav-link links active ml-5 mr-5" href="home.html">Home</a>
-            <a class="nav-item nav-link links active ml-5 mr-5" href="about.html">About</a>
-            <a class="nav-item nav-link links active ml-5 mr-5" href="#">Events</a>
-            <a class="nav-item nav-link links active ml-5 mr-5" href="activities.html">Activities</a>
-            <a class="nav-item nav-link links active ml-5 mr-5" href="#">Members</a>
+            <a class="navbar-brand pl-3 pr-3 bg-dark rounded tilt" href="#"
+              style="color:white;font-family: 'Rubik Mono One', sans-serif;font-size:1.5rem;">Coding Club</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+              aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center " id="navbarNavAltMarkup"
+              style="font-size:1.3rem;font-weight:700;">
+              <div class="navbar-nav ">
+                <a class="nav-item nav-link links active ml-5 mr-5" href="home.html">Home</a>
+                <a class="nav-item nav-link links active ml-5 mr-5" href="about.html">About</a>
+                <a class="nav-item nav-link links active ml-5 mr-5" href="#">Events</a>
+                <a class="nav-item nav-link links active ml-5 mr-5" href="activities.html">Activities</a>
+                <a class="nav-item nav-link links active ml-5 mr-5" href="#">Members</a>
 
+              </div>
+            </div>
+          </nav>
         </div>
-    </div>
-    </nav>
-    <section class="most-liked p-5">
+      </div>
+      <div class>
         <div class="container-fluid">
-            <div class="row justify-content-around align-items-center">
-    <div class="flip-card">
-        <div class="flip-card-front">
-          <div class="inner">
-            <h3><b>Hackathons</b></h3>
+          <div class="row justify-content-around align-items-center">
+            <div class="flip-card">
+              <div class="flip-card-front">
+                <div class="inner">
+                  <h3><b>Hackathons</b></h3>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <div class="inner">
+                  <p class='backcardtext' >
+                    Team-based activities to convert ideas into reality.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-front">
+                <div class="inner">
+                  <h3>Lectures/Talks</h3>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <div class="inner">
+                  <p class='backcardtext'>
+                    By experts from industries and academia on coding/programming.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-front">
+                <div class="inner">
+                  <h3>Thrust Area</h3>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <div class="inner">
+                  <p class='backcardtext'>Helping members to identify their thurst/competency areas so that they can excel in their
+                    professional life after this institute.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-front">
+                <div class="inner">
+                  <h3>Fun activities</h3>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <div class="inner">
+                  <p class='backcardtext'>Various team-building exercises can improve the morale of the members; at the same time take the
+                    stress away. (e.g. Puzzle solving using programs, Game development, etc.)
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-front">
+                <div class="inner">
+                  <h3>Workshops</h3>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <div class="inner">
+                  <p class='backcardtext'>
+                    On different cutting edge technologies to increase the horizon of the members and stay updated
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-front">
+                <div class="inner">
+                  <h3>Competitive programming</h3>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <div class="inner">
+                  <p class='backcardtext'>
+                    To facilitate the competitive skills, we have a separate Codechef chapter for our university where
+                    members can get a flavor of competitive programming.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-front">
+                <div class="inner">
+                  <h3>Student assist</h3>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <div class="inner">
+                  <p class='backcardtext'>Members who are struggling in undergraduate projects can also get benefited by participating in
+                    discussion forums. The exchange of ideas and technical expertise of the other members can improve
+                    the quality of the research and implementation significantly
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-front">
+                <div class="inner">
+                  <h3>Alumni-Student Connect</h3>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <div class="inner">
+                  <p class='backcardtext'>It is a group of activities where the alumni and existing students can part their knowledge and
+                    motivation stories with the rest of the members.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flip-card">
+              <div class="flip-card-front">
+                <div class="inner">
+                  <h3>Induction to professional organizations</h3>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <div class="inner">
+                  <p class='backcardtext'>ACM and IEEE are the two leaders in the coding-related engineering community. We encourage our
+                    members to become a part of these professional bodies through a set of events.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="flip-card-back">
-          <div class="inner">
-            <p>
-                Team-based activities to convert ideas into reality.
-            </p>
-          </div>
-        </div>
-    </div>
-      <div class="flip-card">
-        <div class="flip-card-front">
-          <div class="inner">
-            <h3>Lectures/Talks</h3>
-          </div>
-        </div>
-        <div class="flip-card-back">
-          <div class="inner">
-            <p>
-                By experts from industries and academia on coding/programming.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-card-front">
-          <div class="inner">
-            <h3>Thrust Area</h3>
-          </div>
-        </div>
-        <div class="flip-card-back">
-          <div class="inner">
-            <p>Helping members to identify their thurst/competency areas so that they can excel in their professional life after this institute.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-card-front">
-          <div class="inner">
-            <h3>Fun activities</h3>
-          </div>
-        </div>
-        <div class="flip-card-back">
-          <div class="inner">
-            <p>Various team-building exercises can improve the morale of the members; at the same time take the stress away. (e.g. Puzzle solving using programs, Game development, etc.)
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-card-front">
-          <div class="inner">
-            <h3>Workshops</h3>
-          </div>
-        </div>
-        <div class="flip-card-back">
-          <div class="inner">
-            <p>
-                On different cutting edge technologies to increase the horizon of the members and stay updated
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-card-front">
-          <div class="inner">
-            <h3>Competitive programming</h3>
-          </div>
-        </div>
-        <div class="flip-card-back">
-          <div class="inner">
-            <p>
-                To facilitate the competitive skills, we have a separate Codechef chapter for our university where members can get a flavor of competitive programming.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-card-front">
-          <div class="inner">
-            <h3>Student assist</h3>
-          </div>
-        </div>
-        <div class="flip-card-back">
-          <div class="inner">
-            <p>Members who are struggling in undergraduate projects can also get benefited by participating in discussion forums. The exchange of ideas and technical expertise of the other members can improve the quality of the research and implementation significantly
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-card-front">
-          <div class="inner">
-            <h3>Alumni-Student Connect</h3>
-          </div>
-        </div>
-        <div class="flip-card-back">
-          <div class="inner">
-            <p>It is a group of activities where the alumni and existing students can part their knowledge and motivation stories with the rest of the members.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="flip-card">
-        <div class="flip-card-front">
-          <div class="inner">
-            <h3>Induction to professional organizationst</h3>
-          </div>
-        </div>
-        <div class="flip-card-back">
-          <div class="inner">
-            <p>ACM and IEEE are the two leaders in the coding-related engineering community. We encourage our members to become a part of these professional bodies through a set of events.
-            </p>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-</section>
-</header> 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-</body>
-</html> 
-      
+
+    </header>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+      integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"></script>
+  </body>
+
+</html>
